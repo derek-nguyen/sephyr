@@ -4,7 +4,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	
 	<!-- *** EDIT ME *** -->
-    <title>Sephyr: Build a business</title>
+    <title>Sephyr: Build your freelance business</title>
     
     <!-- *** EDIT ME *** -->
     <meta content="Keyword, Keyword, Keyword" name="keywords">
@@ -14,13 +14,15 @@
 
     <link href="/favicon.ico" rel="icon" type="image/x-icon">
     
-    <link href="css/main.css" media="all" rel="stylesheet" type="text/css">
+    {% load static %}
+
+    <link href= "{% static "css/main.css" %}" media="all" rel="stylesheet" type="text/css">
     
-    <link charset="utf-8" href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link charset="utf-8" href="{% static "css/stylesheet.css" %}" rel="stylesheet" type="text/css">
     
    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 	
-	<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+	<script type="text/javascript" src="{% static "js/jquery.leanModal.min.js" %}"></script>
 	
 	<script type="text/javascript">
 			$(function() {
@@ -38,7 +40,7 @@
 		<div class="cta">
 		
 			<div class="logo">
-				<img src="images/sephyr_logo_dark-text_450x450.jpg">
+				<img src="{% static "images/sephyr_logo_dark-text_450x450.png" %}">
 			</div>
 			
 			
@@ -92,7 +94,7 @@
 		
 		<div class="feature-a-image">
 		
-			<img src="images/calendar.png" />
+			<img src="{% static "images/calendar.png" %}" />
 		
 		</div>
 	
@@ -109,7 +111,7 @@
 		
 		<div class="feature-b-image">
 		
-			<img src="images/feature-image.png" />
+			<img src="{% static "images/feature-image.png" %}" />
 		
 		</div>
 	
@@ -139,7 +141,7 @@
 		
 		<div class="feature-a-image">
 		
-			<img src="images/feature-image.png" />
+			<img src="{% static "images/feature-image.png" %}" />
 		
 		</div>
 	

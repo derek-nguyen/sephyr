@@ -116,6 +116,7 @@ strike {
 	 background-image: url(../images/bg.jpg);
 	 background-attachment: fixed;
 	 color: white;
+	 background-size: cover;
 	 
 }
 

@@ -113,18 +113,22 @@ strike {
 }
 
 #cta-container {
-	 background-image: url(../images/bg.jpg);
+	 background-image: url(../images/icons/bg_landing.jpg);
+	 background-repeat: no-repeat;
+	 background-size: cover;
 	 background-attachment: fixed;
+	 background-color: #3e3d4e;
 	 color: white;
 	 background-size: cover;
-	 
-}
+} 
 
 .cta {
 	max-width: 960px;
 	margin: 0 auto;
 	padding-bottom: 95px;
 }
+
+
 
 .copy {
 	padding: 0 0 40px 0;

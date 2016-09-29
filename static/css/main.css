@@ -119,13 +119,17 @@ strike {
 	 background-attachment: fixed;
 	 background-color: #3e3d4e;
 	 color: white;
-	 background-size: cover;
 } 
+
+/*creates a dark opaque layer in the back*/
+#cta-container-overlay {
+	background: black;
+}
 
 .cta {
 	max-width: 960px;
 	margin: 0 auto;
-	padding-bottom: 95px;
+	padding-bottom: 32.5%;
 }
 
 

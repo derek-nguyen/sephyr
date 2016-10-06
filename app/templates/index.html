@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	
-    <title>Sephyr: Build your freelance business</title>
+	<title>Sephyr: Build your freelance business</title>
 
-    <link href="/favicon.ico" rel="icon" type="image/x-icon">
-    
-    {% load static %}
+	<link href="/favicon.ico" rel="icon" type="image/x-icon">
 
-    <link href= "{% static "css/main.css" %}" media="all" rel="stylesheet" type="text/css">
-    
-    <link charset="utf-8" href="{% static "css/stylesheet.css" %}" rel="stylesheet" type="text/css">
-    
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	{% load static %}
+
+	<link href= "{% static "css/main.css" %}" media="all" rel="stylesheet" type="text/css">
+
+	<link charset="utf-8" href="{% static "css/stylesheet.css" %}" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 	
 	<script type="text/javascript" src="{% static "js/jquery.leanModal.min.js" %}"></script>
 	
 	<script type="text/javascript">
-			$(function() {
-    			$('a[rel*=leanModal]').leanModal({ top : 200, closeButton: ".modal_close" });		
-			});
-		</script>    
+		$(function() {
+			$('a[rel*=leanModal]').leanModal({ top : 200, closeButton: ".modal_close" });		
+		});
+	</script>    
 </head>
 
 <body>
 
 	<!-- CALL TO ACTION CONTAINER -->
-	
+
 	<div id="cta-container">
 		<div class="cta">
-		
+
 			<div class="logo">
 				<h1 style="font-size:72px;"> Sephyr | Online Beauty App </h1>
 			</div>
@@ -43,242 +43,247 @@
 				</h1>
 
 				<h3>
-				"Are you..."
+					"Are you..."
 				</h3>
-			
+
 			</div>
 			
 			<div class="main-button">
 
-					<a rel="leanModal" name="signup" href="#signup" class="main-btn">
-						Looking For Clients
-						
-					</a>
+				<a rel="leanModal" name="signup" href="#signup" class="main-btn">
+					Looking For Clients
+
+				</a>
 
 
-					<a rel="leanModal" name="signup" href="#signup" class="main-btn">
-						Looking For Beauty Artists
-					</a>
+				<a rel="leanModal" name="signup" href="#signup" class="main-btn">
+					Looking For Beauty Artists
+				</a>
 
-			
+
 			</div>
-		
+
 		</div>
-	
+
 	</div>
-	
+
 	<!-- FIRST FEATURE BENEFIT -->
-	
-	<div id="feature-a-container">
-	
-	<div class="feature-a">
-		
-		<div class="feature-a-copy">
-		
-			<!-- *** EDIT ME *** -->
-			<h2>Manage Your Appointments and Payments</h2>
 
-			<p>Let your clients schedule an appointment with a calendar, which will sync with their calendar so they won't miss an appointment. Express payment will allow your customers to prepay for your service for a hassle free transaction.</p>
-			
+	<div id="feature-a-container">
+
+		<div class="feature-a">
+
+			<div class="feature-a-copy">
+
+				<!-- *** EDIT ME *** -->
+				<h2>Manage Your Appointments and Payments</h2>
+
+				<p>Let your clients schedule an appointment with a calendar, which will sync with their calendar so they won't miss an appointment. Express payment will allow your customers to prepay for your service for a hassle free transaction.</p>
+
 			</div>	
-		
+
 		</div>
 		
 		<div class="feature-a-image">
-		
-			<img src="{% static "images/calendar.png" %}" />
-		
+
+			<img src="{% static "images/Icons/calendar.png" %}" />
+
 		</div>
-	
-	
+
 	</div>
-	
-	</div>
-	
+
+
 	<!-- SECOND FEATURE BENEFIT -->
-	
+
 	<div id="feature-b-container">
-	
-	<div class="feature-b">
 		
-		<div class="feature-b-image">
-		
-			<img src="{% static "images/feature-image.png" %}" />
-		
-		</div>
-	
-		<div class="feature-b-copy">
+		<div class="feature-b">
+			
+			<div class="feature-b-image">
 
-			<h2>Create a profile</h2>
+				<img src="{% static "images/feature-image.png" %}" />
 
-			<p>Allow customers to connect with you and your work. List a variety of services you provide. Upload pictures on your instagram profile, which will then sync with our app. </p>
-		
-		</div>
-	
-	</div>
-	
-	</div>
-	
-	<div id="feature-a-container">
-	
-	<div class="feature-a">
-		
-		<div class="feature-a-copy">
-		
-			<h2>Easy to use platform</h2>
+			</div>
 
-			<p>Quick and easy to learn platform will allow you integrate this software in your business, allowing you to focus on your work.</p>
+			<div class="feature-b-copy">
+
+				<h2>Create a profile</h2>
+
+				<p>Allow customers to connect with you and your work. List a variety of services you provide. Upload pictures on your instagram profile, which will then sync with our app. </p>
+
+			</div>
 
 		</div>
 		
-		<div class="feature-a-image">
-		
-			<img src="{% static "images/feature-image.png" %}" />
-		
-		</div>
-	
-	
-	</div>
-	
 	</div>
 
-	
+	<div id="feature-c-container">
+		
+		<div class="feature-c">
+			
+			<div class="feature-c-copy">
+
+				<h2>Easy to use platform</h2>
+
+				<p>Quick and easy to learn platform will allow you integrate this software in your business, allowing you to focus on your work.</p>
+
+			</div>
+			
+			<div class="feature-c-image">
+
+				<img src="{% static "images/feature-image.png" %}" />
+
+			</div>
+
+
+		</div>
+		
 	</div>
-	
+
 	<!-- FOOTER CONTAINER -->
-	
+
 	<div id="footer-container">
-	
+		
 		<div class="footer">
 
-	<!-- PRICING CONTAINER -->
-	
-	<div id="pricing-container">
-	
-		<div class="pricing">
-		
-			<div class="plan">
-			
-				<div class="plan-type">
-					<!-- *** EDIT ME *** -->
-					Free Plan
-				</div>
+			<!-- PRICING CONTAINER -->
+
+			<div id="pricing-container">
 				
-				<div class="plan-price">
-					<!-- *** EDIT ME *** -->
-					<p class="amount"><sup>$</sup>0</p>
-					<p class="tiny">per month</p>
-				</div>
-				
-				<div class="feature">
-					<!-- *** EDIT ME *** -->
-					Feature One 
-				</div>
-				
-				<div class="feature">
-					<!-- *** EDIT ME *** -->
-					<strike>Feature Two</strike>
-				</div>
-				
-				<div class="feature">
-					<!-- *** EDIT ME *** -->
-					<strike>Feature Three</strike>
-				</div>
-				
-				<div class="feature">
-					<!-- *** EDIT ME *** -->
-					<strike>Feature Four</strike>
-				</div>
-				
-				<div class="plan-btn">
+				<div class="pricing">
 					
-					<a class="plan-btn-style" rel="leanModal" name="signup" href="#signup">
-					<!-- *** EDIT ME *** -->
-					Sign me up!
-					</a>
-				
-				</div>
+					<div class="plan">
+						
+						<div class="plan-type">
+							<!-- *** EDIT ME *** -->
+							Free Plan
+						</div>
+
+						<div class="plan-price">
+							<!-- *** EDIT ME *** -->
+							<p class="amount"><sup>$</sup>0</p>
+							<p class="tiny">per month</p>
+						</div>
+
+						<div class="feature">
+							<!-- *** EDIT ME *** -->
+							Feature One 
+						</div>
+
+						<div class="feature">
+							<!-- *** EDIT ME *** -->
+							<strike>Feature Two</strike>
+						</div>
+
+						<div class="feature">
+							<!-- *** EDIT ME *** -->
+							<strike>Feature Three</strike>
+						</div>
+
+						<div class="feature">
+							<!-- *** EDIT ME *** -->
+							<strike>Feature Four</strike>
+						</div>
+
+						<div class="plan-btn">
+
+							<a class="plan-btn-style" rel="leanModal" name="signup" href="#signup">
+								<!-- *** EDIT ME *** -->
+								Sign me up!
+							</a>
 							
+						</div>
+
+					</div>
+
+
+					<div class="plan-best">
+						
+						<div class="plan-type">
+							<!-- *** EDIT ME *** -->
+							Middle Plan
+						</div>
+
+						<div class="plan-price-best">
+							<!-- *** EDIT ME *** -->
+							<p class="amount"><sup>$</sup>5</p>
+							<p class="tiny">per month</p>
+						</div>
+
+						<div class="feature">
+							<!-- *** EDIT ME *** -->
+							Feature One
+						</div>
+
+						<div class="feature">
+							<!-- *** EDIT ME *** -->
+							Feature Two
+						</div>
+
+						<div class="feature">
+							<!-- *** EDIT ME *** -->
+							<strike>Feature Three</strike>
+						</div>
+
+						<div class="feature">
+							<!-- *** EDIT ME *** -->
+							<strike>Feature Four</strike>
+						</div>
+
+						<div class="plan-btn">
+
+							<a class="plan-btn-style" rel="leanModal" name="signup" href="#signup">
+								<!-- *** EDIT ME *** -->
+								Sign me up!
+							</a>
+							
+						</div>
+						
+					</div>			
+
+				</div>
+				
 			</div>
-			
-			
-			<div class="plan-best">
-			
-				<div class="plan-type">
-					<!-- *** EDIT ME *** -->
-					Middle Plan
-				</div>
-				
-				<div class="plan-price-best">
-					<!-- *** EDIT ME *** -->
-					<p class="amount"><sup>$</sup>5</p>
-					<p class="tiny">per month</p>
-				</div>
-				
-				<div class="feature">
-					<!-- *** EDIT ME *** -->
-					Feature One
-				</div>
-				
-				<div class="feature">
-					<!-- *** EDIT ME *** -->
-					Feature Two
-				</div>
-				
-				<div class="feature">
-					<!-- *** EDIT ME *** -->
-					<strike>Feature Three</strike>
-				</div>
-				
-				<div class="feature">
-					<!-- *** EDIT ME *** -->
-					<strike>Feature Four</strike>
-				</div>
-				
-				<div class="plan-btn">
-					
-					<a class="plan-btn-style" rel="leanModal" name="signup" href="#signup">
-					<!-- *** EDIT ME *** -->
-					Sign me up!
-					</a>
-				
-				</div>
-			
-			</div>			
-		
-		</div>
-		
-	
-	</div>
+
+      <div id="signup">
+        <h4>We are so close to launching!</h4>
+        
+        <p class="size16">
+        So glad you're interested in signing up. Please leave us your email, we'll let you know the moment we launch. You can also give us feedback to help us built the perfect product for you.
+        </p>
+
+      </div>  
+
 			<div class="copyright">
 				<!-- *** EDIT ME *** -->
 				<p>Copyright © 2016 Sephyr</p>
 			</div>
-		
+			
 		</div>
 
 	</div>
-	
-	<!-- POP UP SIGN UP BOX -->
-	
-	 <div id="signup">
+
+
+<!-- POP UP SIGN UP BOX -->
+
+	 <!-- <div id="signup">
         <h4>
-        <!-- *** EDIT ME *** -->
+        <!- - *** EDIT ME *** - ->
         We are so close to launching!
         </h4>
         
         <p class="size16">
-        <!-- *** EDIT ME *** -->
+        <!- - *** EDIT ME *** - ->
         So glad you're interested in signing up. Please leave us your email, we'll let you know the moment we launch. You can also give us feedback to help us built the perfect product for you.
         </p>
 
-		<!-- *** START OF WUFOO FORM EMBED CODE *** -->
+		<!- - *** START OF WUFOO FORM EMBED CODE *** - ->
         <form accept-charset="UTF-8" action=
         "https://usabilityhour.wufoo.eu/forms/w1e6uhhi0oebzsp/#public"
         autocomplete="off" class="wufoo topLabel page" enctype=
         "multipart/form-data" id="form6" method="post" name="form6" novalidate=
         "">
-        <!-- END OF WUFOO EMBED CODE -->
+        <!- - END OF WUFOO EMBED CODE - ->
             <ul>
                 <li class="notranslate" id="foli1">
                     <div>
@@ -292,7 +297,7 @@
 
                 <li class="buttons">
                     <div>
-                    	<!-- *** EDIT AFTER VALUE=" *** -->
+                    	<!- - *** EDIT AFTER VALUE=" *** - ->
                         <input class="btTxt submit" id="saveForm" name=
                         "saveForm" onclick="”_gaq.push(['_trackEvent'," type=
                         "submit" value="Remind me when you launch">
@@ -300,7 +305,7 @@
                     <div id="no">
                     
                     	<a class="modal_close" href="#">
-                    	<!-- *** EDIT ME *** -->
+                    	<!- - *** EDIT ME *** - ->
                     	No thanks, I don't need this product.
                     	</a>
                     
@@ -313,12 +318,12 @@
 
                 <textarea cols="1" id="comment" name="comment" rows="1">
 </textarea> 
-				<!-- *** REPLACE VALUE WITH CODE FROM WUFOO *** -->
+				<!- - *** REPLACE VALUE WITH CODE FROM WUFOO *** - ->
 				<input id="idstamp" name="idstamp" type="hidden"
                 value="HIQecF8d3pfU1vhFNgY8KGuLYz/vmRduMhF7CS0FMw0="></li>
             </ul>
         </form>
-    </div>
+    </div> -->
 
 </body>
 

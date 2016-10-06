@@ -243,6 +243,8 @@ strike {
 	margin-bottom: 5px;
 }
 
+/*FEATURE A*/
+
 #feature-a-container {
 	background-color: #f6f8f9;
 	display: inline-block;
@@ -289,6 +291,8 @@ strike {
 	background-color: #63ac32;
 }
 
+/*FEATURE B*/
+
 #feature-b-container {
 	background-color: #ffffff;
 	display: inline-block;
@@ -317,6 +321,35 @@ strike {
 	float: left;
 }
 
+/*FEATURE C*/
+
+#feature-c-container {
+	background-color: #f6f8f9;
+	display: inline-block;
+	width: 100%;
+	padding: 75px 0;
+}
+
+.feature-c {
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: left;
+	
+}
+
+.feature-c-copy {
+	float: left;
+	padding-left: 50px;
+	padding-right: 10px;
+	padding-bottom: 25px;
+	padding-top: 10px;
+	max-width: 500px;
+	line-height: 29px;
+}
+
+.feature-c-image {
+	float: right;
+}
 #footer-container {
 	background-color: #ffffff;
 	padding: 50px 0;
@@ -482,6 +515,18 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 	max-width: 100%;
 }
 
+.feature-c-image {
+	float: none;
+}
+.feature-c-copy {
+	float: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 25px;
+	padding-top: 10px;
+	line-height: 29px;
+	max-width: 100%;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media screen and (max-width: 420px) {

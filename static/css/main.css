@@ -77,7 +77,7 @@ h1 {
 	font-family: 'bariol_boldbold';
 	font-size: 40px;
 	padding-bottom: 15px;
-	line-height: 40px;
+	line-height: initial;
 }
 
 h2 {

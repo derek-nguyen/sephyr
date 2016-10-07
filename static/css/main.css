@@ -119,7 +119,7 @@ strike {
 	 background-attachment: fixed;
 	 background-color: #3e3d4e;
 	 color: white;
-	 box-shadow: inset 0 0 0 1000px rgba(63,61,79,.3);
+	 box-shadow: inset 0 0 0 1000px rgba(63,61,79,.6);
 } 
 
 /*creates a dark opaque layer in the back*/
@@ -130,7 +130,7 @@ strike {
 .cta {
 	max-width: 960px;
 	margin: 0 auto;
-	padding-top: 13%;
+	padding-top: 11%;
 	padding-bottom: 21%;
 }
 
@@ -147,9 +147,9 @@ strike {
 }
 
 .main-btn {
-	background-color: white;
+	background-color: #79C582;
 	font-family: 'bariol_boldbold';
-	color: #004977;
+	color: white;
 	padding:11px 30px;
 	border-radius: 20px;
 	font-size: 22px;

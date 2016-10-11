@@ -108,8 +108,8 @@ sup {
  
 }
 
-strike {
-
+img {
+	position: relative;
 }
 
 #cta-container {
@@ -130,14 +130,14 @@ strike {
 .cta {
 	max-width: 960px;
 	margin: 0 auto;
-	padding-top: 11%;
-	padding-bottom: 21%;
+	padding-top: 10%;
+	padding-bottom: 17%;
 }
 
 
 
 .copy {
-	padding: 0 0 40px 0;
+	padding: 0 0 0 0;
 	max-width: 890px;
 	margin: 0 auto;
 }
@@ -154,6 +154,7 @@ strike {
 	border-radius: 20px;
 	font-size: 22px;
 	margin: 2.5rem;
+	display: inline-block;
 
 }
 
@@ -257,7 +258,6 @@ strike {
 	max-width: 960px;
 	margin: 0 auto;
 	text-align: left;
-	padding-bottom: 75px;
 }
 
 
@@ -308,7 +308,7 @@ strike {
 }
 
 .feature-b-copy {
-	float: left;
+	float: right;
 	padding-left: 50px;
 	padding-right: 10px;
 	padding-bottom: 25px;

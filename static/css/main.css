@@ -110,6 +110,8 @@ sup {
 
 img {
 	position: relative;
+	height: 350px;
+	max-width: 400px;
 }
 
 #cta-container {
@@ -131,7 +133,7 @@ img {
 	max-width: 960px;
 	margin: 0 auto;
 	padding-top: 10%;
-	padding-bottom: 17%;
+	padding-bottom: 15%;
 }
 
 
@@ -251,6 +253,7 @@ img {
 	display: inline-block;
 	width: 100%;
 	padding: 75px 0;
+	padding-top: 0;
 	
 }
 
@@ -527,6 +530,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 	line-height: 29px;
 	max-width: 100%;
 }
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media screen and (max-width: 420px) {

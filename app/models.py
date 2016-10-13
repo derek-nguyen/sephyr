@@ -1,12 +1,12 @@
-from __future__ import unicode_literals
-
 from django.db import models
+from django.forms import ModelForm
 
-# class Question(models.Model):
-#     question_text = models.CharField(max_length=200)
-#     pub_date = models.DateTimeField('date published')
+class LandingSubscriber(models.Model):
+    first_name = models.CharField(max_length=50, blank=True)
+    last_name = models.CharField(max_length=50, blank=True)
+    email = models.EmailField(max_length=254, blank=True)
 
-# class Choice(models.Model):
-#     question = models.ForeignKey(Question, on_delete=models.CASCADE)
-#     choice_text = models.CharField(max_length=200)
-#     votes = models.IntegerField(default=0)
+class LandingSubscriberForm(ModelForm):
+    class Meta:
+        model = LandingSubscriber
+        fields = ['first_name', 'last_name', 'email']

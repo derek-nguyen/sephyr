@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	
+	<title>Sephyr: Build your freelance business</title>
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+	{% load static %}
+	<link href= "{% static "css/main.css" %}" media="all" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div style="height:100vh;" class="jumbotron">
+		<div class="row">
+			{% if sub %}
+				<h2>Thank you!</h2>
+				<p>You've signed up for updates through your email: {{ sub.email }}</p>
+			{% else %}
+				<p>There was a problem with subscribing, please try again.</p>
+			{% endif %}
+		</div>
+	</div>
+	
+</body>
+</html>

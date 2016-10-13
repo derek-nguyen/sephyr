@@ -11,12 +11,13 @@
 
 	<link href= "{% static "css/main.css" %}" media="all" rel="stylesheet" type="text/css">
 
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
 	<link charset="utf-8" href="{% static "css/stylesheet.css" %}" rel="stylesheet" type="text/css">
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-	
 	<script type="text/javascript" src="{% static "js/jquery.leanModal.min.js" %}"></script>
-	
 	<script type="text/javascript">
 		$(function() {
 			$('a[rel*=leanModal]').leanModal({ top : 200, closeButton: ".modal_close" });		
@@ -252,6 +253,23 @@
         <p class="size16">
         So glad you're interested in signing up. Please leave us your email, we'll let you know the moment we launch. You can also give us feedback to help us built the perfect product for you.
         </p>
+
+        <form action="{% url 'thankyou' %}" method="post">
+          {% csrf_token %}
+          
+          <label for="your_first">First name: </label>
+          <input id="first_name" type="text" name="first_name"/>
+
+          <label for="your_last">Last name: </label>
+          <input id="last_name" type="text" name="last_name"/>
+
+          <label for="your_email">Your email*: </label>
+          <input id="email" type="text" name="email"/>
+
+          <p>* = Required fields</p>
+
+          <input type="submit" value="Subscribe"/>
+        </form>
 
       </div>  
 

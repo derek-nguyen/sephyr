@@ -147,15 +147,12 @@
 	<!-- FOOTER CONTAINER -->
 
 	<div id="footer-container">
-		
 		<div class="footer">
 			<div id="signup">
 				<h4>We are so close to launching!</h4>
-
 				<p class="size16">
-				So glad you're interested in signing up. Please leave us your email, we'll let you know the moment we launch. You can also give us feedback to help us built the perfect product for you.
+					So glad you're interested in signing up. Please leave us your email, we'll let you know the moment we launch. You can also give us feedback to help us built the perfect product for you.
 				</p>
-
 				<form action="{% url 'thankyou' %}" method="post">
 				  {% csrf_token %}
 				  <label for="your_first">First name: </label>
@@ -168,7 +165,6 @@
 				  <p>* = Required fields</p>
 				</form>
 			</div>
-
 			<div class="copyright">
 				<p>Copyright © 2016 Sephyr</p>
 			</div>

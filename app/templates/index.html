@@ -40,10 +40,6 @@
 	<title>Sephyr: Beauty and Wellness Service</title> 
 </head>
 
-
-
-
-
 <body>
 
 	<!-- CALL TO ACTION CONTAINER -->
@@ -218,35 +214,30 @@
 	<div id="footer-container">
 		
 		<div class="footer">
+			<div id="signup">
+				<h4>We are so close to launching!</h4>
 
-      <div id="signup">
-        <h4>We are so close to launching!</h4>
-        
-        <p class="size16">
-        So glad you're interested in signing up. Please leave us your email, we'll let you know the moment we launch. You can also give us feedback to help us built the perfect product for you.
-        </p>
+				<p class="size16">
+				So glad you're interested in signing up. Please leave us your email, we'll let you know the moment we launch. You can also give us feedback to help us built the perfect product for you.
+				</p>
 
-        <form action="{% url 'thankyou' %}" method="post">
-          {% csrf_token %}
-          <label for="your_first">First name: </label>
-          <input id="first_name" type="text" name="first_name"/>
-          <label for="your_last">Last name: </label>
-          <input id="last_name" type="text" name="last_name"/>
-          <label for="your_email">Your email*: </label>
-          <input id="email" type="text" name="email"/>
-          <input type="submit" value="Subscribe"/>
-          <p>* = Required fields</p>
-        </form>
-
-      </div>  
+				<form action="{% url 'thankyou' %}" method="post">
+				  {% csrf_token %}
+				  <label for="your_first">First name: </label>
+				  <input id="first_name" type="text" name="first_name"/>
+				  <label for="your_last">Last name: </label>
+				  <input id="last_name" type="text" name="last_name"/>
+				  <label for="your_email">Your email*: </label>
+				  <input id="email" type="text" name="email"/>
+				  <input type="submit" value="Subscribe"/>
+				  <p>* = Required fields</p>
+				</form>
+			</div>
 
 			<div class="copyright">
-				<!-- *** EDIT ME *** -->
 				<p>Copyright © 2016 Sephyr</p>
 			</div>
-			
 		</div>
-
 	</div>
 </body>
 

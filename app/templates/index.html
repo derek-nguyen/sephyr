@@ -21,16 +21,18 @@
 
 	{% load static %}
 
+	<link charset="utf-8" href="{% static "css/stylesheet.css" %}" rel="stylesheet" type="text/css">
 	<link href= "{% static "css/main.css" %}" media="all" rel="stylesheet" type="text/css">
 
-	<link charset="utf-8" href="{% static "css/stylesheet.css" %}" rel="stylesheet" type="text/css">
 
 	<!-- jQuery -->
 	<script type="text/javascript" src="jquery-1.8.3.js"></script>
 	<script type="text/javascript" src="{% static "http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" %}"></script>
 
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+
 	<script type="text/javascript" src="{% static "js/jquery.leanModal.min.js" %}"></script>
-	
 	<script type="text/javascript">
 		
 	</script>   
@@ -38,372 +40,139 @@
 	<title>Sephyr: Beauty and Wellness Service</title> 
 </head>
 
-
-
-
-
 <body>
-
-	<!-- CALL TO ACTION CONTAINER -->
 
 	<div id="cta-container">
 		<div class="cta">
-
 			<div class="logo">
-
 				<h1 style="font-size:72px;"> Sephyr | Your Business, Your Way </h1>
 			</div>
-			
-			
 			<div class="copy">
-				
-				<h1>
-					Discover. Network. Inspire.
-				</h1>
-
-				<h3>
-					"Are you..."
-				</h3>
-
+				<h1>Discover. Network. Inspire.</h1>
+				<h3>"Are you..."</h3>
 			</div>
-			
 			<div class="main-button">
-
-				<a rel="leanModal" name="signup" href="#signup" class="main-btn">
-					Looking For Clients
-
-				</a>
-
-
-				<a rel="leanModal" name="signup" href="#signup" class="main-btn">
-					Looking For Beauty Artists
-				</a>
-
-
+				<a rel="leanModal" name="signup" href="#signup" class="main-btn">Looking For Clients</a>
+				<a rel="leanModal" name="signup" href="#signup" class="main-btn">Looking For Beauty Artists</a>
 			</div>
-
 		</div>
-
 	</div>
 
 	<!-- [Looking for clients] FIRST FEATURE BENEFIT -->
-
 	<div id="feature-a-container">
-
-		<h1 class="page-header" style="border:none; margin:20px 0 40px;">
-	                    Looking For Beauty Artists
-	                </h1>
-
+		<h1 class="page-header" style="border:none; margin:20px 0 40px;"> Looking For Clients</h1>
 		<div class="feature-a">
-
 			<div class="feature-a-copy">
-
-				<!-- *** EDIT ME *** -->
 				<h2>Manage Your Appointments and Payments</h2>
-
 				<p>Let your clients schedule an appointment with a calendar, which will sync with their calendar so they won't miss an appointment. Express payment will allow your customers to prepay for your service for a hassle free transaction.</p>
-
 			</div>	
-
 		</div>
-		
 		<div class="feature-a-image">
-
 			<img class="center-block" src="{% static "images/Icons/calendar.png" %}" />
-
 		</div>
-
 	</div>
-
 
 	<!-- [Looking for clients] SECOND FEATURE BENEFIT -->
 
 	<div id="feature-b-container">
-		
 		<div class="feature-b">
-			
 			<div class="feature-b-image">
-
 				<img class="center-block" src="{% static "images/Icons/profile_icon.png" %}" />
-
 			</div>
-
 			<div class="feature-b-copy">
-
 				<h2>Create a profile and network with other professionals in your area</h2>
-
 				<p>Allow customers to connect with you and your work. List a variety of services you provide. Upload pictures on your social media profiles and line it with your sephyr account.</p>
-
 				<p style="padding-top: 5px;">Connect with other professionals in your area. </p>
-
 			</div>
-
 		</div>
-		
 	</div>
 
 	<!-- [Looking for clients] THIRD FEATURE BENEFIT -->
 
 	<div id="feature-c-container">
-		
 		<div class="feature-c">
-			
 			<div class="feature-c-copy">
-
 				<h2>Easy to use platform</h2>
-
 				<p>Quick and easy to learn platform will allow you to integrate this software in your business</p>
-
 				<p style="padding-top: 5px;"> Takes the ease off of administrative work to focus solely in providing quality service and increase customer satisfaction.</p>
-
 			</div>
-			
 			<div class="feature-c-image">
-
 				<img class="center-block" src="{% static "images/Icons/platform_icon.svg" %}" />
-
 			</div>
-
 		</div>
-		
 	</div>
-
 
 	<!-- [Looking for beauty artists] FEATURE BENEFITS -->
 
 	<div class="continer-fluid">
 		<div class="row">
 			<div class="col-lg-12">
-	                <h1 class="page-header" style="border:none; margin:20px 0 40px;">
-	                    Looking For Beauty Artists
-	                </h1>
-	            </div>
+                <h1 class="page-header" style="border:none; margin:20px 0 40px;">
+                    Looking For Beauty Artists
+                </h1>
+	        </div>
+	    </div>
+
+		<div class="row">
 			<div class="col-md-3">
-	                <div class="panel panel-default">
-	                    <div class="panel-heading" style="background:none; border:none;">
-	                        <img class="img-responsive center-block" src="{% static "images/Icons/housecall_icon.png" %}" style="width:180px; height:180px"/>
-	                    </div>
-	                    <div class="panel-body">
-	                        <p>Have the experts come to you</p>
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="col-md-3">
-	                <div class="panel panel-default">
-	                    <div class="panel-heading" style="background:none; border:none;">
-	                        <img class="img-responsive center-block" src="{% static "images/Icons/review_icon.png" %}" style="width:180px; height:180px"/>
-	                    </div>
-	                    <div class="panel-body">
-	                        <p>Rate | Review | Follow your favorite artists and create a community</p>
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="col-md-3">
-	                <div class="panel panel-default">
-	                    <div class="panel-heading" style="background:none; border:none;">
-	                        <img class="img-responsive center-block" src="{% static "images/Icons/find_icon.png" %}" />
-	                    </div>
-	                    <div class="panel-body">
-	                        <p>Find Experts Near You</p>
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="col-md-3">
-	                <div class="panel panel-default">
-	                    <div class="panel-heading" style="background:none; border:none;">
-	                        <img class="img-responsive center-block" src="{% static "images/Icons/appointment_icon.png" %}"/>
-	                    </div>
-	                    <div class="panel-body">
-	                        <p>Schedule Appointments at the tap of a button</p>
-	                    </div>
-	                </div>
-	            </div>
+                <div class="panel-heading" style="background:none; border:none;">
+                    <img class="img-responsive center-block" src="{% static "images/Icons/housecall_icon.png" %}" style="width:180px; height:180px"/>
+                </div>
+                <div class="panel-body">
+                    <p>Have the experts come to you</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel-heading" style="background:none; border:none;">
+                    <img class="img-responsive center-block" src="{% static "images/Icons/review_icon.png" %}" style="width:180px; height:180px"/>
+                </div>
+                <div class="panel-body">
+                    <p>Rate | Review | Follow your favorite artists and create a community</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel-heading" style="background:none; border:none;">
+                    <img class="img-responsive center-block" src="{% static "images/Icons/find_icon.png" %}" />
+                </div>
+                <div class="panel-body">
+                    <p>Find Experts Near You</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel-heading" style="background:none; border:none;">
+                    <img class="img-responsive center-block" src="{% static "images/Icons/appointment_icon.png" %}"/>
+                </div>
+                <div class="panel-body">
+                    <p>Schedule Appointments at the tap of a button</p>
+                </div>
+            </div>
 	    </div>
 	<!-- FOOTER CONTAINER -->
 
 	<div id="footer-container">
-		
 		<div class="footer">
-
-			<!-- PRICING CONTAINER -->
-
-			<div id="pricing-container">
-				
-				<div class="pricing">
-					
-					<div class="plan">
-						
-						<div class="plan-type">
-							<!-- *** EDIT ME *** -->
-							Free Plan
-						</div>
-
-						<div class="plan-price">
-							<!-- *** EDIT ME *** -->
-							<p class="amount"><sup>$</sup>0</p>
-							<p class="tiny">per month</p>
-						</div>
-
-						<div class="feature">
-							<!-- *** EDIT ME *** -->
-							Feature One 
-						</div>
-
-						<div class="feature">
-							<!-- *** EDIT ME *** -->
-							<strike>Feature Two</strike>
-						</div>
-
-						<div class="feature">
-							<!-- *** EDIT ME *** -->
-							<strike>Feature Three</strike>
-						</div>
-
-						<div class="feature">
-							<!-- *** EDIT ME *** -->
-							<strike>Feature Four</strike>
-						</div>
-
-						<div class="plan-btn">
-
-							<a class="plan-btn-style" rel="leanModal" name="signup" href="#signup">
-								<!-- *** EDIT ME *** -->
-								Sign me up!
-							</a>
-							
-						</div>
-
-					</div>
-
-
-					<div class="plan-best">
-						
-						<div class="plan-type">
-							<!-- *** EDIT ME *** -->
-							Middle Plan
-						</div>
-
-						<div class="plan-price-best">
-							<!-- *** EDIT ME *** -->
-							<p class="amount"><sup>$</sup>5</p>
-							<p class="tiny">per month</p>
-						</div>
-
-						<div class="feature">
-							<!-- *** EDIT ME *** -->
-							Feature One
-						</div>
-
-						<div class="feature">
-							<!-- *** EDIT ME *** -->
-							Feature Two
-						</div>
-
-						<div class="feature">
-							<!-- *** EDIT ME *** -->
-							<strike>Feature Three</strike>
-						</div>
-
-						<div class="feature">
-							<!-- *** EDIT ME *** -->
-							<strike>Feature Four</strike>
-						</div>
-
-						<div class="plan-btn">
-
-							<a class="plan-btn-style" rel="leanModal" name="signup" href="#signup">
-								<!-- *** EDIT ME *** -->
-								Sign me up!
-							</a>
-							
-						</div>
-						
-					</div>			
-
-				</div>
-				
+			<div id="signup">
+				<h4>We are so close to launching!</h4>
+				<p class="size16">
+					So glad you're interested in signing up. Please leave us your email, we'll let you know the moment we launch. You can also give us feedback to help us build the perfect product for you.
+				</p>
+				<form action="{% url 'thankyou' %}" method="post">
+				  {% csrf_token %}
+				  <label for="your_first">First name: </label>
+				  <input id="first_name" type="text" name="first_name"/>
+				  <label for="your_last">Last name: </label>
+				  <input id="last_name" type="text" name="last_name"/>
+				  <label for="your_email">Your email*: </label>
+				  <input id="email" type="text" name="email"/>
+				  <input type="submit" value="Subscribe"/>
+				  <p>* = Required fields</p>
+				</form>
 			</div>
-
-      <div id="signup">
-        <h4>We are so close to launching!</h4>
-        
-        <p class="size16">
-        So glad you're interested in signing up. Please leave us your email, we'll let you know the moment we launch. You can also give us feedback to help us built the perfect product for you.
-        </p>
-
-      </div>  
-
 			<div class="copyright">
-				<!-- *** EDIT ME *** -->
 				<p>Copyright © 2016 Sephyr</p>
 			</div>
-			
 		</div>
-
 	</div>
-
-
-<!-- POP UP SIGN UP BOX -->
-
-	 <!-- <div id="signup">
-        <h4>
-        <!- - *** EDIT ME *** - ->
-        We are so close to launching!
-        </h4>
-        
-        <p class="size16">
-        <!- - *** EDIT ME *** - ->
-        So glad you're interested in signing up. Please leave us your email, we'll let you know the moment we launch. You can also give us feedback to help us built the perfect product for you.
-        </p>
-
-		<!- - *** START OF WUFOO FORM EMBED CODE *** - ->
-        <form accept-charset="UTF-8" action=
-        "https://usabilityhour.wufoo.eu/forms/w1e6uhhi0oebzsp/#public"
-        autocomplete="off" class="wufoo topLabel page" enctype=
-        "multipart/form-data" id="form6" method="post" name="form6" novalidate=
-        "">
-        <!- - END OF WUFOO EMBED CODE - ->
-            <ul>
-                <li class="notranslate" id="foli1">
-                    <div>
-                        <input class="field text medium" id="Field1" maxlength=
-                        "255" name="Field1" placeholder=
-                        "Enter your email to be notified" required=""
-                        spellcheck="false" tabindex="1" type="email">
-                    </div>
-                </li>
-
-
-                <li class="buttons">
-                    <div>
-                    	<!- - *** EDIT AFTER VALUE=" *** - ->
-                        <input class="btTxt submit" id="saveForm" name=
-                        "saveForm" onclick="”_gaq.push(['_trackEvent'," type=
-                        "submit" value="Remind me when you launch">
-                    </div>
-                    <div id="no">
-                    
-                    	<a class="modal_close" href="#">
-                    	<!- - *** EDIT ME *** - ->
-                    	No thanks, I don't need this product.
-                    	</a>
-                    
-                    </div>
-                </li>
-
-
-                <li class="hide"><label for="comment">Do Not Fill This
-                Out</label> 
-
-                <textarea cols="1" id="comment" name="comment" rows="1">
-</textarea> 
-				<!- - *** REPLACE VALUE WITH CODE FROM WUFOO *** - ->
-				<input id="idstamp" name="idstamp" type="hidden"
-                value="HIQecF8d3pfU1vhFNgY8KGuLYz/vmRduMhF7CS0FMw0="></li>
-            </ul>
-        </form>
-    </div> -->
-
 </body>
 
 </html>

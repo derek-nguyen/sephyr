@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from .models import LandingSubscriber
 from .models import LandingSubscriberForm
 
+from util import validate_email
 import re
 
 def index( request ):
@@ -15,8 +16,8 @@ def thankyou( request ):
         form = LandingSubscriberForm(request.POST)
         if form.is_valid():
             email = form.cleaned_data['email']
-            if email and len(email):
-                check = re.match()
+            if not validate_email(email):
+                return render(request, 'thankyou.html', { 'status': 'invalid_email'})
             first_name = form.cleaned_data['first_name']
             last_name = form.cleaned_data['last_name']
             sub = LandingSubscriber(email=email)
@@ -30,13 +31,3 @@ def thankyou( request ):
 
 def subscribe( request ):
     return HttpResponse("got to subscribe function")
-	
-
-def validateEmail( email ):
-    from django.core.validators import validate_email
-    from django.core.exceptions import ValidationError
-    try:
-        validate_email(email)
-        return True
-    except ValidationError:
-        return False

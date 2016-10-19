@@ -19,7 +19,8 @@
 			{% if sub %}
 				<h2>Thank you!</h2>
 				<p>You've signed up for updates through your email: {{ sub.email }}</p>
-			{% else %}
+			{% elif status %}
+				<h2>Oops!</h2>
 				<p>There was a problem with subscribing, please try again.</p>
 			{% endif %}
 		</div>

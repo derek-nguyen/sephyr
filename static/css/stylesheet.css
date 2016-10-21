@@ -4,8 +4,8 @@
 }
 
 #cta-container {
-	 background-image: url(../images/icons/bg_landing.jpg);
-	 height: 100%;
+	background-image: url(../images/icons/bg_landing.jpg);
+	height:100vh;
 }
 
 .logo {

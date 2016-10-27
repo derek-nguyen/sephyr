@@ -169,42 +169,6 @@ span {
 	background-color: #c0e4fb;
 }
 
-.pricing {
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 50px 5px;
-	text-align: center;
-	font-family: 'bariol_boldbold';
-}
-
-.plan {
-	width: 210px;
-	height: 300px;
-	border-radius: 8px;
-	background-color: #37a1e4;
-	display: inline-block;
-	margin: 15px 22px;
-	color: white;
-	padding: 8px 0px;
-}
-
-.plan-type {
-	font-size: 25px;
-	padding-bottom: 10px;
-}
-
-.plan-price {
-	background-color: #0a6aa6;
-	padding: 3px 0;
-	padding-top: 6px;
-	font-size: 44px;
-	margin-bottom: 5px;
-}
-
-.amount {
-	margin-left: -10px;
-}
-
 .tiny {
 	font-size: 16px;
 	padding-top: 3px;

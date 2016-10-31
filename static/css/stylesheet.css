@@ -4,7 +4,8 @@
 }
 
 #cta-container {
-	/*background-image: url(../images/icons/background.jpg);*/
+	/*background-image: url(images/Icons/background.jpg);*/
+/*	background: url('{% static 'images/Icons/background.jpg' %}')*/	
 	height:100vh;
 }
 

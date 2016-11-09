@@ -21,7 +21,11 @@
 				<p>You've signed up for updates through your email: {{ sub.email }}</p>
 			{% elif status %}
 				<h2>Oops!</h2>
-				<p>There was a problem with subscribing, please try again.</p>
+				{% if status == 'invalid_email'%}
+					<p>Invalid email, please try again.</p>
+				{% else %}
+					<p>There was a problem with subscribing, please try again.</p>
+				{% endif %}
 			{% endif %}
 		</div>
 	</div>

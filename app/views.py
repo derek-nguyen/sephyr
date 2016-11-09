@@ -10,6 +10,9 @@ import re
 def index( request ):
 	return render(request, 'index.html', None)
 
+def landing( request ):
+    return render(request, 'landing.html', None)
+
 def thankyou( request ):
     # if this is a POST request, we need to process the form data
     if request.method == 'POST':
@@ -25,9 +28,5 @@ def thankyou( request ):
                 sub.first_name = first_name
                 sub.last_name = last_name
             sub.save()
-        return render(request, 'thankyou.html', {'sub':sub})
-    else:
-        return redirect('index')
-
-def subscribe( request ):
-    return HttpResponse("got to subscribe function")
+            return render(request, 'thankyou.html', {'sub':sub})
+        return redirect('landing')

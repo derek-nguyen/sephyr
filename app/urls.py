@@ -7,3 +7,4 @@ urlpatterns = [
     url(r'^landing/$', views.landing, name='landing'),
     url(r'^thankyou/$', views.thankyou, name='thankyou')
 ]
+

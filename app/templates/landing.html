@@ -1,206 +1,177 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<!-- META -->
- 	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-	<link href="/favicon.ico" rel="icon" type="image/x-icon">
+{% extends 'base.html' %}
 
-	<!-- BOOTSTRAP -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-	<!-- CSS -->
+{% block css %}
 	{% load static %}
-	<link charset="utf-8" href="{% static "css/fonts.css" %}" rel="stylesheet" type="text/css">
 	<link href= "{% static "css/main.css" %}" media="all" rel="stylesheet" type="text/css">
 	<link charset="utf-8" href="{% static "css/stylesheet.css" %}" rel="stylesheet" type="text/css">
-	<script src="https://use.fontawesome.com/9de69730d8.js"></script>
+{% endblock %}
 
-	<!-- jQuery -->
-	<!-- <script type="text/javascript" src="jquery-1.8.3.js"></script> -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-
+{% block javascript %}
 	<script type="text/javascript" src="{% static "js/jquery.leanModal.min.js" %}"></script>
 	<script type="text/javascript" src="{% static "js/landing.js" %}"></script>
-	
-	<!-- Google Analytics -->
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+{% endblock %}
 
-  ga('create', 'UA-86852894-1', 'auto');
-  ga('send', 'pageview');
-	</script>
+{% block title %}Sephyr: Beauty and Wellness Service{% endblock %}
 
-	<title>Sephyr: Beauty and Wellness Service</title> 
-</head>
+{% block content %}
 
-<body>
-
-	<div id="cta-container" 
-	style="	
-	background: url('{% static 'images/Icons/background.jpg' %}'); 
-	background-repeat: no-repeat; height:100vh;
-	background-size: cover;
-	background-attachment: fixed;
-	background-color: #3e3d4e;
-	color: white;
-	box-shadow: inset 0 0 0 1000px rgba(63,61,79,.6);">
-		<div class="cta">
-			<div class="logo">
-				<h1 class="header"> Sephyr | Your Business, Your Way </h1>
-			</div>
-			<div class="copy">
-				<h1>Empowering Local Professionals</h1>
-				<h3>"Are you..."</h3>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="main-button">
-						<a rel="leanModal" href="#clients" class="main-btn hidden-sm">Looking For Clients</a>
-						<a rel="leanModal" href="#users" class="main-btn hidden-sm">Looking For Beauty Artists</a>
-					</div>
-				</div>
-			</div>
-			
+<div id="cta-container" 
+style="	
+background: url('{% static 'images/Icons/background.jpg' %}'); 
+background-repeat: no-repeat; height:100vh;
+background-size: cover;
+background-attachment: fixed;
+background-color: #3e3d4e;
+color: white;
+box-shadow: inset 0 0 0 1000px rgba(63,61,79,.6);">
+	<div class="cta">
+		<div class="logo">
+			<h1 class="header"> Sephyr | Your Business, Your Way </h1>
 		</div>
-	</div>
-	
-
-	<!-- FIRST FEATURE BENEFIT -->
-	<div id="feature-a-container">
-		<h1 class="page-header subtitles" id="clients" style="border:none;"><span>Looking For Clients</h1></span>
-		<div class="feature-a">
-			<div class="feature-a-copy">
-				<h2>Manage Your Appointments and Payments</h2>
-				<p>Whether you're a freelancer or own a business, this scheduler will follow you wherever you go. We understand your time is precious, so this app will remind your clients of upcoming appointments.  </p> 
-				<p>Allow express pre-payment to manage all of your transactions or choose to pay in cash.</p>
-			</div>	
+		<div class="copy">
+			<h1>Empowering Local Professionals</h1>
+			<h3>"Are you..."</h3>
 		</div>
-		<div class="feature-a-image hidden-xs">
-			<img class="center-block" src="{% static "images/Icons/calendar.png" %}" />
-		</div>
-	</div>
-
-	<!-- [Looking for clients] SECOND FEATURE BENEFIT -->
-	<div id="feature-b-container">
-		<div class="feature-b">
-			<div class="feature-b-image hidden-xs">
-				<img class="center-block" src="{% static "images/Icons/profile_icon.png" %}" />
-			</div>
-			<div class="feature-b-copy">
-				<h2>Create a profile and network with other professionals in your area</h2>
-				<p>Allow customers to connect with you and your work. List a variety of services you provide. Upload pictures on your social media profiles and line it with your sephyr account.</p>
-				<p class="subpara">Connect with other professionals in your area and build a community. </p>
-			</div>
-		</div>
-	</div>
-							
-	<!-- [Looking for clients] THIRD FEATURE BENEFIT -->
-	<div id="feature-c-container">
 		<div class="container">
 			<div class="row">
-				<div class="feature-c">
-					<div class="feature-c-copy">
-						<h2>Robust platform</h2>
-						<p>Quick and easy to learn platform will allow you to integrate this software as part of your business. Takes the ease off of administrative work to focus solely in providing quality service and increase customer satisfaction. Choose between out-house or in-house services.</p>
-					</div>
-					<div class="feature-c-image hidden-xs">
-						<img class="center-block" src="{% static "images/Icons/platform_icon.svg" %}" />
-					</div>
+				<div class="main-button">
+					<a rel="leanModal" href="#clients" class="main-btn hidden-sm">Looking For Clients</a>
+					<a rel="leanModal" href="#users" class="main-btn hidden-sm">Looking For Beauty Artists</a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+
+<!-- FIRST FEATURE BENEFIT -->
+<div id="feature-a-container">
+	<h1 class="page-header subtitles" id="clients" style="border:none;"><span>Looking For Clients</h1></span>
+	<div class="feature-a">
+		<div class="feature-a-copy">
+			<h2>Manage Your Appointments and Payments</h2>
+			<p>Whether you're a freelancer or own a business, this scheduler will follow you wherever you go. We understand your time is precious, so this app will remind your clients of upcoming appointments.  </p> 
+			<p>Allow express pre-payment to manage all of your transactions or choose to pay in cash.</p>
+		</div>	
+	</div>
+	<div class="feature-a-image hidden-xs">
+		<img class="center-block" src="{% static "images/Icons/calendar.png" %}" />
+	</div>
+</div>
+
+<!-- [Looking for clients] SECOND FEATURE BENEFIT -->
+<div id="feature-b-container">
+	<div class="feature-b">
+		<div class="feature-b-image hidden-xs">
+			<img class="center-block" src="{% static "images/Icons/profile_icon.png" %}" />
+		</div>
+		<div class="feature-b-copy">
+			<h2>Create a profile and network with other professionals in your area</h2>
+			<p>Allow customers to connect with you and your work. List a variety of services you provide. Upload pictures on your social media profiles and line it with your sephyr account.</p>
+			<p class="subpara">Connect with other professionals in your area and build a community. </p>
+		</div>
+	</div>
+</div>
+						
+<!-- [Looking for clients] THIRD FEATURE BENEFIT -->
+<div id="feature-c-container">
+	<div class="container">
+		<div class="row">
+			<div class="feature-c">
+				<div class="feature-c-copy">
+					<h2>Robust platform</h2>
+					<p>Quick and easy to learn platform will allow you to integrate this software as part of your business. Takes the ease off of administrative work to focus solely in providing quality service and increase customer satisfaction. Choose between out-house or in-house services.</p>
+				</div>
+				<div class="feature-c-image hidden-xs">
+					<img class="center-block" src="{% static "images/Icons/platform_icon.svg" %}" />
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<!-- USERS LOOKING FOR SERVICE -->
-
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-12">
-                <h1 class="page-header subtitles" id="users">
-                    <span>Looking For Beauty Artists</span>
-                </h1>
-	        </div>
-	    <div>
-<div class="container">
-		<div class="row">
-			<div class="col-md-3">
-                <div class="panel-heading">
-                    <img class="img-responsive center-block" src="{% static "images/Icons/housecall_icon.png" %}" style="width:180px; height:180px"/>
-                </div>
-                <div class="panel-body">
-                    <p>Have the experts come to you</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="panel-heading">
-                    <img class="img-responsive center-block" src="{% static "images/Icons/review_icon.png" %}" style="width:180px; height:180px"/>
-                </div>
-                <div class="panel-body">
-                    <p>Rate | Review | Follow your favorite artists and create a community</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="panel-heading">
-                    <img class="img-responsive center-block" src="{% static "images/Icons/find_icon.png" %}" />
-                </div>
-                <div class="panel-body">
-                    <p>Find Experts Near You</p>
-                </div>
-            </div>
-            <div class="col-md-3" style="padding-top:5%;">
-                <div class="panel-heading">
-                    <img class="img-responsive center-block" src="{% static "images/Icons/appointment_icon.png" %}"/>
-                </div>
-                <div class="panel-body">
-                    <p>Schedule Appointments with a tap of a button</p>
-                </div>
-            </div>
-		</div>
 </div>
 
-	<!-- FOOTER CONTAINER -->
+<!-- USERS LOOKING FOR SERVICE -->
 
-	<div id="footer-container" class="container">
-		<div class="footer">
-			<div id="signup">
-				<h4>Let us keep you updated!</h4>
-				<p class="size16">
-					Please leave us your email, and we'll let you know about important dates on releases. We always appreciate ideas, feature-requests, knowledge, and any sort of feedback to help us build the perfect product for you.
-				</p>
-				<form action="{% url 'thankyou' %}" method="post">
-					{% csrf_token %}
-					<div class="row form-input">
-						<label for="your_first">First name: </label>
-					<input id="first_name" type="text" name="first_name"/>	
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12">
+            <h1 class="page-header subtitles" id="users">
+                <span>Looking For Beauty Artists</span>
+            </h1>
+        </div>
+    <div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+            <div class="panel-heading">
+                <img class="img-responsive center-block" src="{% static "images/Icons/housecall_icon.png" %}" style="width:180px; height:180px"/>
+            </div>
+            <div class="panel-body">
+                <p>Have the experts come to you</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="panel-heading">
+                <img class="img-responsive center-block" src="{% static "images/Icons/review_icon.png" %}" style="width:180px; height:180px"/>
+            </div>
+            <div class="panel-body">
+                <p>Rate | Review | Follow your favorite artists and create a community</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="panel-heading">
+                <img class="img-responsive center-block" src="{% static "images/Icons/find_icon.png" %}" />
+            </div>
+            <div class="panel-body">
+                <p>Find Experts Near You</p>
+            </div>
+        </div>
+        <div class="col-md-3" style="padding-top:5%;">
+            <div class="panel-heading">
+                <img class="img-responsive center-block" src="{% static "images/Icons/appointment_icon.png" %}"/>
+            </div>
+            <div class="panel-body">
+                <p>Schedule Appointments with a tap of a button</p>
+            </div>
+        </div>
+	</div>
+</div>
+
+<!-- FOOTER CONTAINER -->
+
+<div id="footer-container" class="container">
+	<div class="footer">
+		<div id="signup">
+			<h4>Let us keep you updated!</h4>
+			<p class="size16">
+				Please leave us your email, and we'll let you know about important dates on releases. We always appreciate ideas, feature-requests, knowledge, and any sort of feedback to help us build the perfect product for you.
+			</p>
+			<form action="{% url 'thankyou' %}" method="post">
+				{% csrf_token %}
+				<div class="row form-input">
+					<label for="your_first">First name: </label>
+				<input id="first_name" type="text" name="first_name"/>	
+				</div>
+				<div class="row form-input">
+				  <label for="your_last">Last name: </label>
+				  <input id="last_name" type="text" name="last_name"/>
+				</div>
+				<div class="row form-input">
+				  <label for="your_email">Your email*: </label>
+				  <input id="email" type="text" name="email"/>
+				<div class="row">
+					<div class="col-md-12">
+						<input type="submit" value="Subscribe" class="subscribe"/>
+				  		<p>* = Required fields</p>	
 					</div>
-					<div class="row form-input">
-					  <label for="your_last">Last name: </label>
-					  <input id="last_name" type="text" name="last_name"/>
-					</div>
-					<div class="row form-input">
-					  <label for="your_email">Your email*: </label>
-					  <input id="email" type="text" name="email"/>
-					<div class="row">
-						<div class="col-md-12">
-							<input type="submit" value="Subscribe" class="subscribe"/>
-					  		<p>* = Required fields</p>	
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-		<div class="copyright row">
-			<p>Copyright © 2016 Sephyr</p>
+				</div>
+			</form>
 		</div>
 	</div>
-</body>
+	<div class="copyright row">
+		<p>Copyright © 2016 Sephyr</p>
+	</div>
+</div>
 
-</html>
+{% endblock %}

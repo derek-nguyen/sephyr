@@ -1,5 +1,6 @@
 dj-database-url==0.4.1
 Django==1.9
+django-registration==2.2
 gunicorn==19.6.0
 Jinja2==2.8
 MarkupSafe==0.23

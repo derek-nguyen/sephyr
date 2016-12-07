@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 
 from .models import LandingSubscriber
@@ -7,8 +8,9 @@ from .models import LandingSubscriberForm
 from util import validate_email
 import re
 
+@login_required
 def index( request ):
-	return render(request, 'index.html', None)
+    return render(request, 'index.html', None)
 
 def landing( request ):
     return render(request, 'landing.html', None)

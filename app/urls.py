@@ -11,9 +11,6 @@ urlpatterns = [
 
 # registration naming
 
-# ^ ^$ [name='index']
-# ^ ^landing/$ [name='landing']
-# ^ ^thankyou/$ [name='thankyou']
 # ^ ^accounts/ ^register/$ [name='registration_register']
 # ^ ^accounts/ ^register/closed/$ [name='registration_disallowed']
 # ^ ^accounts/ ^login/$ [name='auth_login']

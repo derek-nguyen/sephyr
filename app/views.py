@@ -26,7 +26,7 @@ def signup(request):
 
 # @login_required
 def index( request ):
-    return render(request, 'index.html', None)
+    return render(request, 'home.html', None)
 
 def landing( request ):
     return render(request, 'landing.html', None)

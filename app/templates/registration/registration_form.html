@@ -12,8 +12,8 @@
 	<h3 style="margin-top:100px">Sign Up</h3> 
 	<hr>
 	<div class="login-form">
-
-		<form action="" method="post">
+		<form action="{% url 'signup' %}" method="post">
+			{% csrf_token %}
 			<div class="control-group span3" style="width:400px" >
 				<input type="text"  value="" placeholder="Enter your name" id="name" style="width:400px;padding-bottom:15px;margin-bottom:10px" >
 				<i class="input-icon fui-user" for="login-name"></i>
@@ -29,15 +29,14 @@
 				<i class="input-icon fui-lock" for="login-pass"></i>
 			</div>
 
-
 			<div class="control-group span3" style="width:400px">
 				<input type="password"  value="" placeholder="Confirm Password" id="login-pass" style="width:400px;padding-bottom:15px;margin-bottom:10px">
 				<i class="input-icon fui-lock" for="login-pass"></i>
 			</div>
 
 			<div style="text-align:center"> 
-				<a class="btn btn-hg btn-primary btn-wide" href="#">Sign Up</a>
-				<!--<a class="login-link" href="#">Lost your password ?</a> -->
+				<!-- <a class="btn btn-hg btn-primary btn-wide" type="submit">Sign Up</a> -->
+				<input type="submit" value="Sign up" class="btn btn-hg btn-primary btn-wide"/>
 			</div>
 		</form>
 

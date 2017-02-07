@@ -6,8 +6,17 @@ class Artist(models.Model):
 	user = models.OneToOneField(User, on_delete=models.CASCADE)
 	address = models.CharField(max_length=100)
 
+    # class Meta:
+    #     db_table = "artist"
+
+class ArtistRegisterForm(ModelForm):
+    class Meta:
+        model = Artist
+        fields = ['user', 'address']
+
+
 class Client(models.Model):
-  user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
 
 class LandingSubscriber(models.Model):
     first_name = models.CharField(max_length=50, blank=True)
@@ -15,12 +24,10 @@ class LandingSubscriber(models.Model):
     email = models.EmailField(max_length=254, blank=True)
 
     class Meta:
-      db_table = "landing_subscriber"
+        db_table = "landing_subscriber"
 
 class LandingSubscriberForm(ModelForm):
     class Meta:
         model = LandingSubscriber
         fields = ['first_name', 'last_name', 'email']
 
-
-  		  

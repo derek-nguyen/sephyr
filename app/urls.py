@@ -7,7 +7,7 @@ urlpatterns = [
     url(r'^landing/$', views.landing, name='landing'),
     url(r'^thankyou/$', views.thankyou, name='thankyou'),
 	url(r'^accounts/', include('registration.backends.simple.urls')),
-	url(r'^accounts/register', views.signup)
+	url(r'^accounts/register/$', views.signup, name='signup')
 ]
 
 # registration naming

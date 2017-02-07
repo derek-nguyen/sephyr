@@ -1,8 +1,14 @@
 dj-database-url==0.4.1
 Django==1.9
+django-annoying==0.10.3
 django-registration==2.2
+django-scheduler==0.8.2
 gunicorn==19.6.0
+icalendar==3.11.1
 Jinja2==2.8
 MarkupSafe==0.23
 psycopg2==2.6.2
+python-dateutil==2.6.0
+pytz==2016.10
+six==1.10.0
 whitenoise==3.2.2

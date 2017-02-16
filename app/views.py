@@ -2,29 +2,12 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 
-from .models import LandingSubscriber, LandingSubscriberForm, ArtistRegisterForm
+from .models import LandingSubscriber, LandingSubscriberForm
 
 from util import validate_email
 import re
 
-def signup(request):
-    print "helloooo"
-    if request.method == 'POST':
-        form = ArtistRegisterForm(request.POST)
-        if form.is_valid():
-            name = form.cleaned_data['name']
-            email = form.cleaned_data['email']
-            pass1 = form.cleaned_data['pass1']
-            pass2 = form.cleaned_data['pass2']
-            artist = Artist(email=email)
-            if all([name, email, pass1, pass2] and pass1 == pass2):
-                artist.name = name
-                artist.email = email
-            artist.save()
-            return redirect('auth_login')
-        return render(request, 'registration/registration_form.html', {'form':form})
-
-# @login_required
+@login_required
 def index( request ):
     return render(request, 'home.html', None)
 

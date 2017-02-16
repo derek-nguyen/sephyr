@@ -29,11 +29,11 @@
             </ul> -->
             <ul class="nav navbar-nav navbar-right">
                 {% if user.is_authenticated %}
-                    <li><a href="{% url 'auth_logout' %}?next=/"> Logout</a></li>
+                    <li><a href="{% url 'account_logout' %}?next=/"> Logout</a></li>
                 {% else %}
-                    <li><a href="{% url 'auth_login' %}">Log In</a></li>
+                    <li><a href="{% url 'account_login' %}">Log In</a></li>
                 {% endif %}
-                <li><a href="{% url 'registration_register' %}">Register as a beautician</a></li>
+                <li><a href="{% url 'account_signup' %}">Register as a beautician</a></li>
             </ul>
         </div>
     </div>
